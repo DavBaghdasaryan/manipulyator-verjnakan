@@ -33,6 +33,12 @@ let calc_btn = document.querySelector('.calc_btn')
 let calculator = document.querySelector('.calculator')
 let cancel_btn = document.querySelector('.cancel_btn')
 
+let bort = document.querySelector('#bort')
+let strela = document.querySelector('#strela')
+
+let strela1 = document.querySelector('.strela1')
+let strela2 = document.querySelector('.strela2')
+let strela3 = document.querySelector('.strela3')
 
 
 let slider1 = document.getElementById('range1')
@@ -45,7 +51,99 @@ let obshi = document.getElementById('obshi')
 
 let yndhanur = parseInt(obshi.innerHTML)
 
+strela.removeChild(strela2)
+strela.removeChild(strela3)
 
+bort.addEventListener('change', () => {
+    let selectedValueBort = bort.options[bort.selectedIndex].value;
+
+    if (selectedValueBort == 3) {
+        obshi.innerHTML = '6400руб'
+        yndhanur = parseInt(obshi.innerHTML)
+        strela.appendChild(strela1)
+        strela.removeChild(strela2)
+        strela.removeChild(strela3)
+
+    }
+    if (selectedValueBort == 5) {
+        obshi.innerHTML = '7200руб'
+        yndhanur = parseInt(obshi.innerHTML)
+        strela.appendChild(strela1)
+        strela.removeChild(strela2)
+        strela.removeChild(strela3)
+    }
+
+
+
+    if (selectedValueBort == 7) {
+        strela.addEventListener('change', () => {
+            let selectedValueStrela = strela.options[strela.selectedIndex].value;
+
+            if (selectedValueStrela == 5) {
+                console.log(selectedValueStrela);
+                obshi.innerHTML = '8000руб'
+                yndhanur = parseInt(obshi.innerHTML)
+
+
+            }
+            if (selectedValueStrela == 7) {
+                obshi.innerHTML = '10000руб'
+                yndhanur = parseInt(obshi.innerHTML)
+            }
+        })
+
+
+        strela.removeChild(strela1)
+        strela.appendChild(strela2)
+        strela.appendChild(strela3)
+        obshi.innerHTML = '8000руб'
+        yndhanur = parseInt(obshi.innerHTML)
+    }
+    if (selectedValueBort == 10) {
+        strela.addEventListener('change', () => {
+            let selectedValueStrela = strela.options[strela.selectedIndex].value;
+
+            if (selectedValueStrela == 5) {
+                obshi.innerHTML = '10000руб'
+                yndhanur = parseInt(obshi.innerHTML)
+
+
+            }
+            if (selectedValueStrela == 7) {
+                obshi.innerHTML = '12000руб'
+                yndhanur = parseInt(obshi.innerHTML)
+            }
+        })
+        obshi.innerHTML = '10000руб'
+        yndhanur = parseInt(obshi.innerHTML)
+        strela.removeChild(strela1)
+        strela.appendChild(strela2)
+        strela.appendChild(strela3)
+    }
+    if (selectedValueBort == 12) {
+        strela.addEventListener('change', () => {
+            let selectedValueStrela = strela.options[strela.selectedIndex].value;
+
+            if (selectedValueStrela == 5) {
+                obshi.innerHTML = '12000руб'
+                yndhanur = parseInt(obshi.innerHTML)
+
+
+            }
+            if (selectedValueStrela == 7) {
+                obshi.innerHTML = '12000руб'
+                yndhanur = parseInt(obshi.innerHTML)
+            }
+        })
+        obshi.innerHTML = '12000руб'
+        yndhanur = parseInt(obshi.innerHTML)
+        strela.removeChild(strela1)
+        strela.appendChild(strela2)
+        strela.appendChild(strela3)
+    }
+
+
+})
 
 output1.innerHTML = slider1.value
 
@@ -65,6 +163,7 @@ slider2.addEventListener('input', () => {
     obshi.innerHTML = parseInt(value * 70 + yndhanur) + "руб"
 
 })
+
 
 
 
@@ -180,4 +279,3 @@ contact.forEach(i => {
         burger.style.display = 'block'
     })
 })
-

@@ -19,8 +19,26 @@
     <div class="calculator">
         <div class="calculator_interface">
             <form action="#" class="form">
-                <div class="bort"></div>
-                <div class="strela"></div>
+                <div class="borts">
+                    <h3>Борт:</h3>
+                    <select id="bort">
+                        <option value="3">3 тонны</option>
+                        <option value="5">5 тонн</option>
+                        <option value="7">7 тонн</option>
+                        <option value="10">10 тонн</option>
+                        <option value="12">12 тонн</option>
+                    </select>
+                </div>
+              <div class="strela">
+                  <h3>Стрела:</h3>
+                <select id='strela'>
+                    <option class="strela1" value="3">3 тонны</option>
+                    <option class="strela2" value="5">5 тонн</option>
+                    <option class="strela3" value="7">7 тонн</option>
+
+                </select>
+              </div>
+               
                 <div class="sliders">
                     <p>Расстояние от мкад (загрузка): <span id="value1"></span> км.</p>
                     <input type="range" min="0" max="100" value="0" class="slider" id="range1">
@@ -31,7 +49,7 @@
                 </div>
             </form>
             <div class="price">
-                <p>Value: <span id="obshi"> 7000руб</span></p>
+                <p>Value: <span id="obshi"> 6400руб</span></p>
             </div>
         </div>
         <button class="cancel_btn">

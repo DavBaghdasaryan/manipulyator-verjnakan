@@ -36,9 +36,8 @@
 }
 
 .calculator_interface {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     position: relative;
@@ -61,19 +60,49 @@
 }
 
 .form {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.bort {
+.borts {
     width: 15%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#bort {
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
 }
 
 .strela {
     width: 15%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#strela {
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
 }
 
 .sliders {
@@ -111,8 +140,11 @@
     width: 40%;
     position: absolute;
     color: white;
-    left: 0;
-    top: 60%;
+    left: 34%;
+    transform: translateX(-34%);
+    top: 65%;
+    display: flex;
+    justify-content: start;
 }
 
 /* header */
@@ -779,7 +811,16 @@ a {
 
 /**************  Media  *********************/
 
+@media only screen and (max-width: 1450px) {
+    .sliders p {
+        font-size: 13px;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
+    .sliders p {
+        font-size: 15px;
+    }
     .container {
         width: 960px;
     }
@@ -806,7 +847,32 @@ a {
     }
 }
 
+@media only screen and (max-width: 1100px) {
+    .sliders p {
+        font-size: 14px;
+    }
+}
+
 @media only screen and (max-width: 980px) {
+    .sliders {
+        width: 43%;
+    }
+
+    .sliders p {
+        font-size: 13px;
+    }
+    .borts {
+        width: 30%;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .strela {
+        width: 30%;
+        margin-bottom: 20px;
+        font-size: 13px;
+
+    }
     .container {
         width: 760px;
     }
@@ -910,6 +976,10 @@ a {
 }
 
 @media only screen and (max-width: 780px) {
+
+    .sliders p {
+        font-size: 11px;
+    }
     .container {
         width: 90%;
     }
@@ -1034,6 +1104,10 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
+
+    .sliders p {
+        font-size: 10px;
+    }
     .ad_section {
         height: 70px;
         font-size: 8px;
@@ -1086,6 +1160,34 @@ a {
     .up_scroll {
         width: 14px;
         height: 14px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .borts {
+        width: 45%;
+        font-size: 13px;
+    }
+
+    .strela {
+        width: 45%;
+        font-size: 13px;
+    }
+
+    .sliders {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .sliders p {
+        margin-bottom: 10px;
+    }
+
+    .price {
+        top: 70%;
+        font-size: 13px;
     }
     .booking_title {
         margin-bottom: 10px;
@@ -1167,6 +1269,8 @@ a {
 }
 
 @media only screen and (max-width: 530px) {
+
+   
     .phone_number {
         font-size: 10px;
         margin-left: 20px;
@@ -1216,6 +1320,22 @@ a {
 }
 
 @media only screen and (max-width: 420px) {
+    .sliders p {
+        font-size: 9px;
+    }
+
+    .price {
+        font-size: 10px;
+    }
+
+    .borts {
+        font-size: 11px;
+    }
+
+    .strela {
+        font-size: 11px;
+    }
+    
     .header_logo {
         font-size: 5px;
         justify-content: start;
@@ -1259,7 +1379,11 @@ a {
     }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 353px) {
+
+    .sliders p {
+        font-size: 8px;
+    }
     .intro_title {
         width: 100%;
         font-size: 7px;
@@ -1283,4 +1407,11 @@ a {
     .intro {
         height: auto;
     }
+
+    .price {
+        top: 80%;
+    }
 }
+
+
+
