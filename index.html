@@ -22,34 +22,37 @@
                 <div class="borts">
                     <h3>Борт:</h3>
                     <select id="bort">
-                        <option value="3">3 тонны</option>
+                        <option>select_value</option>
+
                         <option value="5">5 тонн</option>
                         <option value="7">7 тонн</option>
                         <option value="10">10 тонн</option>
-                        <option value="12">12 тонн</option>
                     </select>
                 </div>
-              <div class="strela">
-                  <h3>Стрела:</h3>
-                <select id='strela'>
-                    <option class="strela1" value="3">3 тонны</option>
-                    <option class="strela2" value="5">5 тонн</option>
-                    <option class="strela3" value="7">7 тонн</option>
+                <div class="strela">
+                    <h3>Стрела:</h3>
+                    <select id='strela'>
+                        <option>select_value</option>
 
-                </select>
-              </div>
-               
+                        <option class="strela1" value="3">3 тонны</option>
+                        <option class="strela2" value="5">5 тонн</option>
+                        <option class="strela3" value="10">10 тонн</option>
+
+
+                    </select>
+                </div>
+
                 <div class="sliders">
                     <p>Расстояние от мкад (загрузка): <span id="value1"></span> км.</p>
                     <input type="range" min="0" max="100" value="0" class="slider" id="range1">
                 </div>
                 <div class="sliders">
-                    <p>Расстояние от мкад (загрузка): <span id="value2"></span> км.</p>
+                    <p>Расстояние от мкад (разгрузка): <span id="value2"></span> км.</p>
                     <input type="range" min="0" max="100" value="0" class="slider" id="range2">
                 </div>
             </form>
             <div class="price">
-                <p>Value: <span id="obshi"> 6400руб</span></p>
+                <p>Value: <span id="obshi"></span></p>
             </div>
         </div>
         <button class="cancel_btn">
@@ -64,18 +67,17 @@
             <div class="header_inner">
                 <div class="header_logo">
                     <img src="./assets/images/logo.png" alt="/" class="logo">
-                    <h2>ARMTECH</h2>
+                    <h2>ФастТехСтрой</h2>
                 </div>
                 <nav class="nav">
                     <ul class="nav_list">
                         <li><a href="#" class="list_item booking">Аренда</a></li>
-                        <li><a href="#" class="list_item payment">Способы Оплаты</a></li>
                         <li><a href="#" class="list_item contact">Связь</a></li>
                     </ul>
                 </nav>
                 <div class="header_contacts">
                     <div class="phone_number">
-                        <p>+374(43) 06-07-07</p>
+                        <p>+7 (926) 979-6818</p>
                         <div class="viber">
                             <img src="./assets/icons/viber.svg" alt="/">
                         </div>
@@ -84,7 +86,7 @@
                         </div>
                     </div>
                     <div class="email">
-                        <a href="mailto:baghdasaryandav@gmail.com" target="_blank">baghdasaryandav@gmail.com</a>
+                        <a href="mailto:mik-7979@mail.ru" target="_blank">mik-7979@mail.ru</a>
                         <img src="./assets/icons/g.svg" alt="/" class="email_icon">
                     </div>
                 </div>
@@ -95,7 +97,6 @@
                     <nav class="burger_nav">
                         <ul class="burger_nav_list">
                             <li><a href="#" class="list_item booking white">Аренда</a></li>
-                            <li><a href="#" class="list_item payment white">Способы Оплаты</a></li>
                             <li><a href="#" class="list_item contact white">Связь</a></li>
                         </ul>
                         <button class="close_menu">
@@ -122,7 +123,7 @@
 
                 <div class="intro_inner">
                     <div class="intro_title">
-                        <h1>Добро пожаловать на сайт манипулятора машин</h1>
+                        <h1>Добро пожаловать на сайт ФастТехСтрой</h1>
                     </div>
                     <div class="intro_undertitle">
                         <h3>Здесь удобно, надежно. качественно. доступно!</h3>
@@ -223,31 +224,13 @@
                                 <h2>Свяжитесь с нами!</h2>
                                 <p>Наши телефоны:</p>
                                 <div class="contact_numbers">
-                                    <h3>+374(99) 89-98-86</h3>
-                                    <h3>+374(43) 06-07-07</h3>
+                                    <h3>+7 (926) 979-6818</h3>
+                                    <h3>+7 (916) 019-0800</h3>
                                 </div>
                                 <p>Наш E-mail:</p>
-                                <a class="contact_email" href="mailto:baghdasaryandav@gmail.com"
-                                    target="_blank">baghdasaryandav@gmail.com</a>
-                                <p>Мы в соцстях:</p>
-                                <div class="contact_icons">
-                                    <a href="https://www.facebook.com/" target="_blank">
-                                        <img src="./assets/icons/facebook.svg" alt="/">
+                                <a class="contact_email" href="mailto:mik-7979@mail.ru"
+                                    target="_blank">mik-7979@mail.ru</a>
 
-                                    </a>
-                                    <a href="https://vk.com" target="_blank">
-                                        <img src="./assets/icons/vk-reproductor.svg" alt="/">
-
-                                    </a>
-                                    <a href="http://twiter.com/" target="_blank">
-                                        <img src="./assets/icons/twitter.svg" alt="/">
-
-                                    </a>
-                                    <a href="mailto:baghdasaryandav@gmail.com" target="_blank">
-                                        <img src="./assets/icons/g.svg" alt="/">
-
-                                    </a>
-                                </div>
                             </div>
 
                         </div>
@@ -275,46 +258,52 @@
 
                         <div class="booking_item">
                             <div class="item_img">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
+                                <img src="./assets/images/Манипулятор 1010.jpg" alt="/">
                             </div>
-                            <div class="item_name">Камаз</div>
-                            <div class="book_btn">
-                                <button class="kamaz">Посмотреть список</button>
+                            <div class="item_name">Манипулятор 10/10</div>
 
-                            </div>
                         </div>
 
                         <div class="booking_item">
                             <div class="item_img">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
+                                <img src="./assets/images/Манипулятор 710 и 510.jpg" alt="/">
                             </div>
-                            <div class="item_name">Камаз</div>
-                            <div class="book_btn">
-                                <button class="kamaz">Посмотреть список</button>
+                            <div class="item_name">Манипулятор 7/10 и 5/10</div>
 
-                            </div>
                         </div>
 
                         <div class="booking_item">
                             <div class="item_img">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
+                                <img src="./assets/images/Манипулятор 55 и 35.jpg" alt="/">
                             </div>
-                            <div class="item_name">Камаз</div>
-                            <div class="book_btn">
-                                <button class="kamaz">Посмотреть список</button>
+                            <div class="item_name">Манипулятор 5/5 и 3/5</div>
 
-                            </div>
                         </div>
 
                         <div class="booking_item">
                             <div class="item_img">
-                                <img src="./assets/images/traktor.jpg" alt="/">
+                                <img src="./assets/images/Кран 32 до 40 тонн.jpg" alt="/">
                             </div>
-                            <div class="item_name">Трактор</div>
-                            <div class="book_btn">
-                                <button class="tractor">Посмотреть список</button>
-                            </div>
+                            <div class="item_name">Кран 32 до 40 тонн</div>
+
                         </div>
+
+                        <div class="booking_item">
+                            <div class="item_img">
+                                <img src="./assets/images/Кран 25 тонн.png" alt="/">
+                            </div>
+                            <div class="item_name">Кран 25 тонн</div>
+
+                        </div>
+
+                        <div class="booking_item">
+                            <div class="item_img">
+                                <img src="./assets/images/Кран 16 тонн.jpg" alt="/">
+                            </div>
+                            <div class="item_name">Кран 16 тонн</div>
+
+                        </div>
+
 
                     </div>
 
@@ -325,533 +314,6 @@
             </div>
         </div>
 
-
-        <!-- ad -->
-
-        <div class="ad_section">
-            <h1>ARMTECH</h1>
-        </div>
-
-
-
-
-        <!-- kamaz -->
-        <div class="kamaz_booking_section">
-            <div class="container">
-
-                <div class="kamaz_booking_inner">
-
-                    <div class="kamaz_title">
-                        <h2>Камазы</h2>
-                    </div>
-
-                    <div class="kamaz_products">
-                        <div class="kamaz_items">
-                            <div class="kamaz_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="kamaz_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-
-                        <div class="kamaz_items">
-                            <div class="kamaz_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="kamaz_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-
-                        <div class="kamaz_items">
-                            <div class="kamaz_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="kamaz_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-
-                        <div class="kamaz_items">
-                            <div class="kamaz_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="kamaz_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-
-                        <div class="kamaz_items">
-                            <div class="kamaz_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="kamaz_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-
-                        <div class="kamaz_items">
-                            <div class="kamaz_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="kamaz_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </div>
-        </div>
-
-
-
-        <!-- ad -->
-
-
-        <div class="ad_section">
-            <h1>ARMTECH</h1>
-        </div>
-
-
-
-        <!-- tractor -->
-        <div class="tractor_booking_section">
-            <div class="container">
-
-                <div class="tractor_booking_inner">
-
-                    <div class="tractor_title">
-                        <h2>Тракторы</h2>
-                    </div>
-
-                    <div class="tractor_products">
-
-                        <div class="tractor_items">
-                            <div class="tractor_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="tractor_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-
-                        <div class="tractor_items">
-                            <div class="tractor_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="tractor_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-
-                        <div class="tractor_items">
-                            <div class="tractor_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="tractor_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-
-                        <div class="tractor_items">
-                            <div class="tractor_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="tractor_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-
-                        <div class="tractor_items">
-                            <div class="tractor_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="tractor_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-
-                        <div class="tractor_items">
-                            <div class="tractor_photo">
-                                <img src="./assets/images/kamaz.jpg" alt="/">
-                            </div>
-                            <div class="tractor_characteristics">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime ut perferendis
-                                    a
-                                    quod nesciunt officia impedit? Quos, quaerat dolorem. Vitae, ut quidem quaerat minus
-                                    explicabo consequuntur quas quisquam hic voluptatem ratione laborum repellat vel
-                                    inventore, ipsam fugiat quibusdam recusandae sint harum, rem quis nisi animi
-                                    numquam.
-                                    Neque, tempora eaque.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis quisquam,
-                                    quod,
-                                    consequatur laborum, fugit repudiandae voluptatem quaerat ipsum aliquam mollitia
-                                    accusamus. Similique porro saepe magnam sequi soluta. Numquam illum, ipsa quam quos
-                                    ratione voluptatibus dicta placeat quo voluptates itaque dolores aliquam cumque
-                                    velit
-                                    dolore rem. Accusantium accusamus ipsum error ducimus eaque facere recusandae nemo
-                                    excepturi quas inventore beatae voluptatibus, dolorem nisi doloribus veritatis
-                                    explicabo
-                                    rerum vitae repudiandae atque, aliquam corrupti pariatur ex doloremque. Nemo optio
-                                    iusto, eaque laborum ipsum rem. Praesentium, quasi hic! Delectus adipisci
-                                    repudiandae
-                                    nesciunt temporibus natus repellendus, expedita fugiat laborum iure ullam eius
-                                    dolorum.
-                                    Neque tempore magni accusantium, amet at sint dicta deleniti earum officiis.
-                                    Doloribus
-                                    dolorum magni recusandae et? Sit alias maxime adipisci accusantium quia tempora
-                                    sapiente
-                                    a eum, quam similique deserunt nesciunt, reprehenderit at natus eius rerum. Fugiat
-                                    perspiciatis maiores dolore eligendi minus! Autem architecto quod cumque nemo nam
-                                    officiis sint tempora assumenda eligendi?</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- ad -->
-
-
-        <div class="ad_section">
-            <h1>ARMTECH</h1>
-        </div>
-
-        <!-- payment method -->
-
-        <div class="payment_section">
-            <div class="container">
-                <div class="payment_inner">
-                    <div class="payment_title">
-                        <h1>Способы оплаты</h1>
-                    </div>
-
-                    <div class="method">
-                        <img src="./assets/images/pay.jpg" alt="/">
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </main>
 
@@ -864,13 +326,7 @@
                     <img src="./assets/images/logo.png" alt="/" class="logo">
                     <h2>ARMTECH</h2>
                 </div>
-                <nav class="footer_nav">
-                    <ul class="footer_nav_list">
-                        <li><a href="#" class="list_item booking">Аренда</a></li>
-                        <li><a href="#" class="list_item kamaz">Камазы</a></li>
-                        <li><a href="#" class="list_item tractor">Тракторы</a></li>
-                    </ul>
-                </nav>
+
                 <div class="footer_phone_number">
                     <p>+374(43) 06-07-07</p>
                 </div>

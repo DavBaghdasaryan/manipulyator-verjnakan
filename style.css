@@ -217,6 +217,7 @@ a {
     width: 55%;
     font-size: 13px;
     font-weight: bold;
+
 }
 
 .burger_nav {
@@ -354,6 +355,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .intro_inner {
@@ -378,6 +382,8 @@ a {
     text-align: center;
     display: flex;
     flex-direction: column;
+    color: #fff;
+
 }
 
 .intro_undertitle {
@@ -389,6 +395,7 @@ a {
     flex-direction: column;
     margin-bottom: 60px;
     text-transform: uppercase;
+    color: #fff;
 }
 
 .calculate {
@@ -398,7 +405,7 @@ a {
 }
 
 .calc_btn {
-    background-color: rgba(240, 240, 240, .4);
+    background-color: rgba(240, 240, 240, .7);
     border: 1px solid black;
     border-radius: 10px;
     font-size: 15px;
@@ -442,7 +449,7 @@ a {
     margin-right: 20px;
     padding-top: 50px;
     font-size: 16px;
-    color: #000;
+    color: #fff;
 }
 
 /* about */
@@ -535,15 +542,15 @@ a {
 .booking_section {
     width: 100%;
     display: flex;
-    align-items: center;
 }
 
 .booking_inner {
-    padding: 210px 0;
+    padding: 150px 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .booking_title {
@@ -554,15 +561,15 @@ a {
 .booking_projects {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .booking_item {
-    width: 25%;
+    width: 32%;
     display: flex;
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
     flex-direction: column;
     align-items: center;
     background-size: #fff;
@@ -581,7 +588,7 @@ a {
 
 .item_img img {
     width: 100%;
-    height: 170px;
+    height: 200px;
 }
 
 .item_name {
@@ -590,168 +597,13 @@ a {
     font-weight: bold;
 }
 
-.book_btn {
-    padding-bottom: 100px;
-}
 
-.book_btn button {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    transition: all .1s linear;
-    outline: none;
-}
 
-.book_btn button:hover {
-    cursor: pointer;
-    transform: scale(1.01);
-}
 
-/* kamaz booking */
 
-.kamaz_booking_section {
-    width: 100%;
-    display: flex;
-}
 
-.kamaz_booking_inner {
-    padding: 150px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.kamaz_title {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-}
 
-.kamaz_products {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.kamaz_items {
-    width: 33%;
-    margin-bottom: 30px;
-    height: 400px;
-    overflow-x: hidden;
-    background-color: white;
-    box-shadow: 0 0 8px -3px black;
-    transition: all .3s linear;
-    overflow-y: scroll;
-}
-
-.kamaz_items:hover {
-    cursor: pointer;
-    transform: scale(1.01);
-}
-
-.kamaz_items img {
-    width: 100%;
-    overflow: hidden;
-    transition: all .1s linear;
-    margin-bottom: 20px;
-}
-
-.kamaz_items img:hover {
-    transform: scale(1.1);
-}
-
-/* ad section */
-
-.ad_section {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: lightskyblue;
-}
-
-/* tractor booking */
-
-.tractor_booking_section {
-    width: 100%;
-    display: flex;
-}
-
-.tractor_booking_inner {
-    padding: 150px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.tractor_title {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-}
-
-.tractor_products {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.tractor_items {
-    width: 33%;
-    margin-bottom: 30px;
-    height: 400px;
-    overflow-x: hidden;
-    background-color: white;
-    box-shadow: 0 0 8px -3px black;
-    transition: all .3s linear;
-    overflow-y: scroll;
-}
-
-.tractor_items:hover {
-    cursor: pointer;
-    transform: scale(1.01);
-}
-
-.tractor_items img {
-    width: 100%;
-    overflow: hidden;
-    transition: all .1s linear;
-    margin-bottom: 20px;
-}
-
-.tractor_items img:hover {
-    transform: scale(1.1);
-}
-
-/* payment */
-
-.payment_section {
-    width: 100%;
-}
-
-.payment_inner {
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.payment_title {
-    color: #000;
-    margin-bottom: 20px;
-}
-
-.method {
-    width: 100%;
-}
 
 /* footer */
 
@@ -790,24 +642,7 @@ a {
     text-transform: uppercase;
 }
 
-.footer_nav {
-    display: flex;
-    justify-content: center;
-    width: 55%;
-    font-size: 13px;
-    font-weight: bold;
-}
 
-.footer_nav_list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.footer_nav_list li {
-    list-style: none;
-    margin: 0 10px;
-}
 
 /**************  Media  *********************/
 
@@ -842,9 +677,7 @@ a {
     .about_us_text {
         font-size: 14px;
     }
-    .booking_item {
-        width: 30%;
-    }
+    
 }
 
 @media only screen and (max-width: 1100px) {
@@ -876,10 +709,7 @@ a {
     .container {
         width: 760px;
     }
-    .ad_section {
-        height: 100px;
-        font-size: 14px;
-    }
+  
     /* header */
     .header_logo {
         font-size: 13px;
@@ -887,9 +717,6 @@ a {
     /* nav */
     .nav {
         font-size: 13px;
-    }
-    .book_btn {
-        padding-bottom: 20px;
     }
     /* contacts */
     .phone_number {
@@ -900,6 +727,10 @@ a {
     }
     .booking_projects {
         justify-content: space-between;
+    }
+
+    .booking_item {
+        width: 48%;
     }
     .whatsapp {
         width: 18px;
@@ -948,31 +779,12 @@ a {
     .booking_inner {
         padding: 50px 0;
     }
-    /* kamaz */
-    .kamaz_booking_inner {
-        padding: 50px 0;
-    }
-    /* tractor */
-    .tractor_booking_inner {
-        padding: 50px 0;
-    }
-    /* payment */
-    .payment_title {
-        font-size: 12px;
-    }
-    .method {
-        width: 90%;
-    }
-    .method img {
-        width: 100%;
-    }
+   
     /* footer */
     .footer_logo {
         font-size: 14px;
     }
-    .footer_nav {
-        font-size: 11px;
-    }
+    
 }
 
 @media only screen and (max-width: 780px) {
@@ -1031,48 +843,18 @@ a {
     .intro_about {
         margin-top: 50px;
     }
-    .kamaz_items {
-        height: 300px;
-    }
-    .tractor_items {
-        height: 300px;
-    }
+    
+   
     .booking_projects {
         justify-content: space-evenly;
     }
-    .booking_item {
-        width: 40%;
-    }
-    .kamaz_booking_inner {
-        padding: 10px 0;
-    }
-    .tractor_booking_inner {
-        padding: 10px 0;
-    }
+    
+   
+    
     .footer_inner {
         padding: 20px 0;
     }
-    .tractor_title {
-        font-size: 12px;
-    }
-    .kamaz_title {
-        font-size: 12px;
-    }
-    .kamaz_characteristics {
-        font-size: 10px;
-    }
-    .tractor_characteristics {
-        font-size: 10px;
-    }
-    .kamaz_photo img {
-        margin-bottom: 5px;
-    }
-    .tractor_photo img {
-        margin-bottom: 5px;
-    }
-    .payment_title {
-        font-size: 10px;
-    }
+   
     /* about */
     .about_us {
         display: flex;
@@ -1108,10 +890,7 @@ a {
     .sliders p {
         font-size: 10px;
     }
-    .ad_section {
-        height: 70px;
-        font-size: 8px;
-    }
+    
     .intro_title {
         width: 70%;
         font-size: 10px;
@@ -1121,36 +900,24 @@ a {
         width: 70%;
     }
     .booking_item {
-        margin-right: 0;
+       width: 50%;
     }
     .about_us_text {
         font-size: 6px;
         width: 70%;
     }
-    .kamaz_products {
-        justify-content: space-evenly;
-    }
-    .kamaz_items {
-        width: 40%;
-    }
+    
     .item_icon {
         width: 20px;
     }
     .item_text {
         font-size: 10px;
     }
-    .tractor_products {
-        justify-content: space-evenly;
-    }
-    .tractor_items {
-        width: 40%;
-    }
+    
     .footer_logo {
         font-size: 10px;
     }
-    .footer_nav {
-        font-size: 10px;
-    }
+    
     .footer_phone_number {
         font-size: 12px;
     }
@@ -1192,6 +959,10 @@ a {
     .booking_title {
         margin-bottom: 10px;
     }
+
+    .booking_item {
+        width: 60%;
+    }
     .header_logo {
         width: 30%;
         font-size: 10px;
@@ -1215,47 +986,14 @@ a {
     .about_title {
         font-size: 8px;
     }
-    .booking_title {
-        font-size: 8px;
-    }
-    .kamaz_items {
-        margin-bottom: 10px;
-        width: 33%;
-    }
+   
     .calc_btn {
         font-size: 10px;
     }
-    .payment_title {
-        font-size: 8px;
-    }
-    .tractor_items {
-        margin-bottom: 10px;
-        width: 33%;
-    }
-    .tractor_title {
-        font-size: 8px;
-        margin-bottom: 10px;
-    }
-    .kamaz_characteristics {
-        font-size: 6px;
-    }
-    .kamaz_photo img {
-        margin-bottom: 5px;
-    }
-    .tractor_characteristics {
-        font-size: 6px;
-    }
-    .tractor_photo img {
-        margin-bottom: 5px;
-    }
+
+    
     .booking_inner {
         padding: 20px 0;
-    }
-    .kamaz_title {
-        font-size: 8px;
-    }
-    .book_btn {
-        padding-bottom: 20px;
     }
     .intro_inner {
         padding-top: 100px;
@@ -1296,23 +1034,18 @@ a {
     .contact_content a {
         font-size: 8px;
     }
-    .footer_nav {
-        display: none;
+
+    .booking_item {
+        width: 75%;
     }
+    
     .footer_inner {
         justify-content: center;
     }
     .footer_logo {
         width: 25%;
     }
-    .kamaz_items {
-        width: 49%;
-        height: 150px;
-    }
-    .tractor_items {
-        width: 49%;
-        height: 150px;
-    }
+   
     .footer_phone_number {
         width: 25%;
         margin-left: 60px;
@@ -1344,7 +1077,7 @@ a {
         margin-right: 1px;
     }
     .booking_item {
-        width: 80%;
+        width: 90%;
     }
     .intro_title {
         width: 80%;
@@ -1355,18 +1088,9 @@ a {
     .intro_about_item {
         width: 40%;
     }
-    .item_img {
-        margin-bottom: 10px;
-    }
     .item_name {
-        margin-bottom: 10px;
-        font-size: 8px;
-    }
-    .book_btn {
-        padding-bottom: 20px;
-    }
-    .book_btn button {
-        font-size: 8px;
+        margin-bottom: 20px;
+        font-size: 12px;
     }
     .phone_number {
         font-size: 5px;
@@ -1377,6 +1101,7 @@ a {
     .whatsapp {
         width: 12px;
     }
+
 }
 
 @media only screen and (max-width: 353px) {
@@ -1400,6 +1125,10 @@ a {
     }
     .footer_phone_number {
         font-size: 8px;
+    }
+
+    .booking_item {
+        width: 100%;
     }
 }
 

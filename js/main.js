@@ -4,18 +4,12 @@ let body = document.querySelector('.body')
 
 let intro = document.querySelector('.intro')
 let booking_section = document.querySelector('.booking_section')
-let kamaz_booking_section = document.querySelector('.kamaz_booking_section')
-let tractor_booking_section = document.querySelector('.tractor_booking_section')
-let payment_section = document.querySelector('.payment_section')
 let footer = document.querySelector('.footer')
 //////// scroll buttons
 
 let logo = document.querySelectorAll('.header_logo')
 let booking = document.querySelectorAll('.booking')
-let kamaz = document.querySelectorAll('.kamaz')
-let tractor = document.querySelectorAll('.tractor')
 let up_scroll = document.querySelector('.up_scroll')
-let payment = document.querySelectorAll('.payment')
 let contact = document.querySelectorAll('.contact')
 
 
@@ -51,27 +45,102 @@ let obshi = document.getElementById('obshi')
 
 let yndhanur = parseInt(obshi.innerHTML)
 
-strela.removeChild(strela2)
-strela.removeChild(strela3)
+
+
+
 
 bort.addEventListener('change', () => {
     let selectedValueBort = bort.options[bort.selectedIndex].value;
 
-    if (selectedValueBort == 3) {
-        obshi.innerHTML = '6400руб'
-        yndhanur = parseInt(obshi.innerHTML)
+    if (selectedValueBort == 5) {
+        strela.addEventListener('change', () => {
+            let selectedValueStrela = strela.options[strela.selectedIndex].value;
+
+            if (selectedValueStrela == 3) {
+                obshi.innerHTML = '9000руб'
+                yndhanur = parseInt(obshi.innerHTML)
+
+
+                output1.innerHTML = slider1.value
+
+                slider1.addEventListener('input', () => {
+                    output1.innerHTML = slider1.value
+                    let value = parseInt(slider1.value) + parseInt(slider2.value)
+                    obshi.innerHTML = parseInt(value * 35 + yndhanur) + "руб"
+
+                })
+
+                output2.innerHTML = slider2.value
+
+                slider2.addEventListener('input', () => {
+                    output2.innerHTML = slider2.value
+                    let value = parseInt(slider1.value) + parseInt(slider2.value)
+
+                    obshi.innerHTML = parseInt(value * 35 + yndhanur) + "руб"
+
+                })
+
+
+            }
+            if (selectedValueStrela == 5) {
+                obshi.innerHTML = '10000руб'
+                yndhanur = parseInt(obshi.innerHTML)
+
+                output1.innerHTML = slider1.value
+
+                slider1.addEventListener('input', () => {
+                    output1.innerHTML = slider1.value
+                    let value = parseInt(slider1.value) + parseInt(slider2.value)
+                    obshi.innerHTML = parseInt(value * 40 + yndhanur) + "руб"
+
+                })
+
+                output2.innerHTML = slider2.value
+
+                slider2.addEventListener('input', () => {
+                    output2.innerHTML = slider2.value
+                    let value = parseInt(slider1.value) + parseInt(slider2.value)
+
+                    obshi.innerHTML = parseInt(value * 40 + yndhanur) + "руб"
+
+                })
+            }
+
+            if (selectedValueStrela == 10) {
+                obshi.innerHTML = '11000руб'
+                yndhanur = parseInt(obshi.innerHTML)
+
+                output1.innerHTML = slider1.value
+
+                slider1.addEventListener('input', () => {
+                    output1.innerHTML = slider1.value
+                    let value = parseInt(slider1.value) + parseInt(slider2.value)
+                    obshi.innerHTML = parseInt(value * 45 + yndhanur) + "руб"
+
+                })
+
+                output2.innerHTML = slider2.value
+
+                slider2.addEventListener('input', () => {
+                    output2.innerHTML = slider2.value
+                    let value = parseInt(slider1.value) + parseInt(slider2.value)
+
+                    obshi.innerHTML = parseInt(value * 45 + yndhanur) + "руб"
+
+                })
+            }
+        })
+
         strela.appendChild(strela1)
-        strela.removeChild(strela2)
-        strela.removeChild(strela3)
+        strela.appendChild(strela2)
+        strela.appendChild(strela3)
+
 
     }
-    if (selectedValueBort == 5) {
-        obshi.innerHTML = '7200руб'
-        yndhanur = parseInt(obshi.innerHTML)
-        strela.appendChild(strela1)
-        strela.removeChild(strela2)
-        strela.removeChild(strela3)
-    }
+
+
+
+
 
 
 
@@ -79,90 +148,81 @@ bort.addEventListener('change', () => {
         strela.addEventListener('change', () => {
             let selectedValueStrela = strela.options[strela.selectedIndex].value;
 
-            if (selectedValueStrela == 5) {
-                console.log(selectedValueStrela);
-                obshi.innerHTML = '8000руб'
+            if (selectedValueStrela == 10) {
+                obshi.innerHTML = '12000руб'
                 yndhanur = parseInt(obshi.innerHTML)
 
+                output1.innerHTML = slider1.value
+
+                slider1.addEventListener('input', () => {
+                    output1.innerHTML = slider1.value
+                    let value = parseInt(slider1.value) + parseInt(slider2.value)
+                    obshi.innerHTML = parseInt(value * 50 + yndhanur) + "руб"
+
+                })
+
+                output2.innerHTML = slider2.value
+
+                slider2.addEventListener('input', () => {
+                    output2.innerHTML = slider2.value
+                    let value = parseInt(slider1.value) + parseInt(slider2.value)
+
+                    obshi.innerHTML = parseInt(value * 50 + yndhanur) + "руб"
+
+                })
 
             }
-            if (selectedValueStrela == 7) {
-                obshi.innerHTML = '10000руб'
-                yndhanur = parseInt(obshi.innerHTML)
-            }
+
+
         })
 
 
         strela.removeChild(strela1)
-        strela.appendChild(strela2)
-        strela.appendChild(strela3)
-        obshi.innerHTML = '8000руб'
-        yndhanur = parseInt(obshi.innerHTML)
+        strela.removeChild(strela2)
+
     }
+
     if (selectedValueBort == 10) {
         strela.addEventListener('change', () => {
             let selectedValueStrela = strela.options[strela.selectedIndex].value;
 
-            if (selectedValueStrela == 5) {
-                obshi.innerHTML = '10000руб'
+            if (selectedValueStrela == 10) {
+                obshi.innerHTML = '14000руб'
                 yndhanur = parseInt(obshi.innerHTML)
 
+                output1.innerHTML = slider1.value
+
+                slider1.addEventListener('input', () => {
+                    output1.innerHTML = slider1.value
+                    let value = parseInt(slider1.value) + parseInt(slider2.value)
+                    obshi.innerHTML = parseInt(value * 60 + yndhanur) + "руб"
+
+                })
+
+                output2.innerHTML = slider2.value
+
+                slider2.addEventListener('input', () => {
+                    output2.innerHTML = slider2.value
+                    let value = parseInt(slider1.value) + parseInt(slider2.value)
+
+                    obshi.innerHTML = parseInt(value * 60 + yndhanur) + "руб"
+
+                })
 
             }
-            if (selectedValueStrela == 7) {
-                obshi.innerHTML = '12000руб'
-                yndhanur = parseInt(obshi.innerHTML)
-            }
+
+
         })
-        obshi.innerHTML = '10000руб'
-        yndhanur = parseInt(obshi.innerHTML)
+
+
         strela.removeChild(strela1)
-        strela.appendChild(strela2)
-        strela.appendChild(strela3)
-    }
-    if (selectedValueBort == 12) {
-        strela.addEventListener('change', () => {
-            let selectedValueStrela = strela.options[strela.selectedIndex].value;
-
-            if (selectedValueStrela == 5) {
-                obshi.innerHTML = '12000руб'
-                yndhanur = parseInt(obshi.innerHTML)
-
-
-            }
-            if (selectedValueStrela == 7) {
-                obshi.innerHTML = '12000руб'
-                yndhanur = parseInt(obshi.innerHTML)
-            }
-        })
-        obshi.innerHTML = '12000руб'
-        yndhanur = parseInt(obshi.innerHTML)
-        strela.removeChild(strela1)
-        strela.appendChild(strela2)
-        strela.appendChild(strela3)
+        strela.removeChild(strela2)
     }
 
 
 })
+// 10/10 14000 60rub
 
-output1.innerHTML = slider1.value
-
-slider1.addEventListener('input', () => {
-    output1.innerHTML = slider1.value
-    let value = parseInt(slider1.value) + parseInt(slider2.value)
-    obshi.innerHTML = parseInt(value * 70 + yndhanur) + "руб"
-
-})
-
-output2.innerHTML = slider2.value
-
-slider2.addEventListener('input', () => {
-    output2.innerHTML = slider2.value
-    let value = parseInt(slider1.value) + parseInt(slider2.value)
-
-    obshi.innerHTML = parseInt(value * 70 + yndhanur) + "руб"
-
-})
 
 
 
@@ -236,41 +296,21 @@ logo.forEach(i => {
 booking.forEach(i => {
     i.addEventListener('click', e => {
         e.preventDefault()
-        booking_section.scrollIntoView({ block: "start", behavior: "smooth" })
+        booking_section.scrollIntoView({ block: "center", behavior: "smooth" })
         burger_nav.classList.remove('block')
         burger.style.display = 'block'
     })
 })
 
 
-////////////// kamaz_section_scroll
-kamaz.forEach(i => {
-    i.addEventListener('click', e => {
-        e.preventDefault()
-        kamaz_booking_section.scrollIntoView({ behavior: "smooth" })
-    })
-})
 
 
-/////////////// tractor_section_scroll
-tractor.forEach(i => {
-    i.addEventListener('click', e => {
-        e.preventDefault()
-        tractor_booking_section.scrollIntoView({ behavior: "smooth" })
-    })
-})
 
-///////////////// payment_section_scroll
-payment.forEach(i => {
-    i.addEventListener('click', e => {
-        e.preventDefault()
-        payment_section.scrollIntoView({ block: "start", behavior: "smooth" })
-        burger_nav.classList.remove('block')
-        burger.style.display = 'block'
-    })
-})
+
 
 //////////////// footer_section_scroll
+
+
 contact.forEach(i => {
     i.addEventListener('click', e => {
         e.preventDefault()
